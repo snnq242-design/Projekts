@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="lv">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Piekļuve portālam · Jūrmalas Kauguru vidusskola</title>
+        <meta name="description" content="Jūrmalas Kauguru vidusskolas portāla piekļuves un autorizācijas lapa." />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <a class="skip" href="#saturs">Pāriet uz saturu</a>
+
+        <div class="utility">
+            <div class="wrap">
+                <span>JŪRMALAS KAUGURU VIDUSSKOLA</span>
+                <span>Zināšanas. Iespējas. Nākotne.</span>
+            </div>
+        </div>
+
+        <header>
+            <div class="wrap navrow">
+                <a href="index.html" class="brand" aria-label="Kauguru vidusskola — sākums">
+                    <span class="crest" aria-hidden="true">K</span>
+                    <span><small>Jūrmalas pilsētas</small>Kauguru vidusskola</span>
+                </a>
+                <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Izvēlne</button>
+                <nav class="links" id="nav" aria-label="Galvenā navigācija">
+                    <a href="index.html">Sākums</a>
+                    <a href="info.html">Par skolu</a>
+                    <a href="kalendars.html">Kalendārs</a>
+                    <a href="kon.html" aria-current="page">Piekļuve</a>
+                </nav>
+                <a class="btn primary" href="kon.html">E-klase / Pieslēgties</a>
+            </div>
+        </header>
+
+        <main id="saturs">
+            <div class="pageintro">
+                <div class="wrap">
+                    <div class="eyebrow">Kauguru vidusskola</div>
+                    <h1>Skolas portāls</h1>
+                    <p>Piekļuve skolas iekšējai informācijas sistēmai un mācību resursiem.</p>
+                </div>
+            </div>
+
+            <section>
+                <div class="wrap authlayout">
+                    <div class="authaside">
+                        <div class="eyebrow">Viena skola. Viena kopiena.</div>
+                        <h2>Esat laipni gaidīti!</h2>
+                        <p>Autorizējieties vai iesniedziet pieteikumu skolēna, vecāka vai skolotāja konta izveidei.</p>
+                        <p>
+                            Reģistrācijas parolei jābūt vismaz 8 rakstzīmes garai, saturot lielo burtu, mazo burtu un vismaz vienu ciparu.
+                        </p>
+                    </div>
+
+                    <div class="authcard" id="auth">
+                        <div class="eyebrow">Autorizācija</div>
+                        <h2 id="authTitle">Pieslēgties portālam</h2>
+
+                        <div class="tabs" role="group" aria-label="Piekļuves veids">
+                            <button type="button" class="selected" id="loginTab" aria-pressed="true">Pieslēgties</button>
+                            <button type="button" id="registerTab" aria-pressed="false">Reģistrēties</button>
+                        </div>
+
+                        <form id="authForm" novalidate>
+                            <label class="field hidden" id="nameWrap">
+                                Vārds un uzvārds
+                                <input id="fullName" autocomplete="name" disabled />
+                                <span class="error" id="nameError"></span>
+                            </label>
+
+                            <label class="field">
+                                E-pasts vai lietotājvārds
+                                <input
+                                    id="identity"
+                                    autocomplete="username"
+                                    required
+                                    aria-describedby="identityError"
+                                />
+                                <span class="error" id="identityError"></span>
+                            </label>
+
+                            <label class="field">
+                                Parole
+                                <input
+                                    id="password"
+                                    type="password"
+                                    autocomplete="current-password"
+                                    required
+                                    aria-describedby="passwordError"
+                                />
+                                <span class="error" id="passwordError"></span>
+                            </label>
+
+                            <div class="passwordtools">
+                                <button type="button" id="showPassword" aria-pressed="false">Rādīt paroli</button>
+                                <span class="strength" id="strength" aria-live="polite"></span>
+                            </div>
+
+                            <label class="field hidden" id="confirmWrap">
+                                Atkārtojiet paroli
+                                <input
+                                    id="confirmPassword"
+                                    type="password"
+                                    autocomplete="new-password"
+                                    disabled
+                                    aria-describedby="confirmError"
+                                />
+                                <span class="error" id="confirmError"></span>
+                            </label>
+
+                            <label class="field hidden" id="roleWrap">
+                                Loma
+                                <select id="role" disabled>
+                                    <option value="student">Skolēns</option>
+                                    <option value="parent">Vecāks</option>
+                                    <option value="teacher">Skolotājs</option>
+                                </select>
+                            </label>
+
+                            <label class="consent hidden" id="consentWrap">
+                                <input type="checkbox" id="consent" disabled />
+                                <span>Piekrītu noteikumiem un personas datu apstrādei skolas konta izveidei.</span>
+                            </label>
+                            <span class="error" id="consentError"></span>
+
+                            <button class="btn primary w-100" type="submit" id="submitAuth">Pieslēgties</button>
+                            <div id="authStatus" class="status hidden" role="status"></div>
+
+                            <p class="formnote">
+                                Skolotāju un darbinieku kontu pieteikumus apstiprina skolas administrācija. Neskaidrību gadījumā sazinieties ar skolas IT atbalstu.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="wrap">
+                <span>© 2026 Jūrmalas Kauguru vidusskola</span>
+                <span>Veidojam nākotni kopā!</span>
+            </div>
+        </footer>
+    </body>
+</html>

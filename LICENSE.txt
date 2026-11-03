@@ -1,0 +1,35 @@
+Copyright (c) 2026 Igors Beloklins
+All rights reserved.
+
+No permission is granted by this notice to use, copy, modify, distribute,
+publish, sublicense, or sell the original project code or documentation,
+in whole or in part, without the prior permission of Igors Beloklins,
+except as permitted by applicable law.
+
+This is a proprietary copyright notice, not an open-source license.
+
+Third-party materials are excluded from this notice. Libraries, fonts,
+school names, school symbols, externally sourced information, and other
+third-party materials remain subject to their respective rights and
+applicable licenses. No ownership of those materials is claimed here.
+This notice does not grant rights to school branding or imply school
+endorsement of this educational project.
+
+THE ORIGINAL PROJECT MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY
+OF ANY KIND, TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE AUTHOR SHALL
+NOT BE LIABLE FOR CLAIMS OR DAMAGES ARISING FROM THEIR USE, TO THE
+EXTENT PERMITTED BY APPLICABLE LAW.
+
+
+Latviešu valodas skaidrojums
+
+© 2026 Igors Beloklins. Visas tiesības aizsargātas.
+
+Ar šo paziņojumu netiek piešķirta atļauja izmantot, kopēt, pārveidot,
+izplatīt, publicēt, sublicencēt vai pārdot projekta oriģinālo kodu un
+dokumentāciju bez autora iepriekšējas atļaujas, izņemot piemērojamos
+tiesību aktos atļautos gadījumus.
+
+Šis nav atvērtā pirmkoda licences paziņojums. Trešo pušu materiāliem
+piemērojami to īpašnieku noteikumi un licences. Netiek apgalvots, ka
+projekts ir skolas apstiprināta vai oficiāla vietne.
